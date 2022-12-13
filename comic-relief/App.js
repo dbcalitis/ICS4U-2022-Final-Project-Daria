@@ -4,20 +4,6 @@ import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 
 export default function App() {
-  // const [fontsLoaded] = useFonts({
-  //   'Inter-Black': require('./assets/fonts/Inter-Black.otf'),
-  // })
-
-  // const onLayoutRootView = useCallback(async () => {
-  //   if (fontsLoaded) {
-  //     await SplashScreen.hideAsync();
-  //   }
-  // }, [fontsLoaded]);
-
-  // if (!fontsLoaded) {
-  //   return null;
-  // }
-
   return (
     <View style={styles.container}>
       <div>
@@ -37,7 +23,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#7F669D',
     alignItems: 'center',
     justifyContent: 'center',
-    // fontFamily: fontsLoaded,
+    fontFamily: 'cursive',
     color: '#FBFACD',
   },
 });
