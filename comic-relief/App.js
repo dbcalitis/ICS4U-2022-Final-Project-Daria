@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import { useFonts } from 'expo-font';
+import React from 'react';
 import * as SplashScreen from 'expo-splash-screen';
 
 export default function App() {
@@ -15,7 +15,6 @@ export default function App() {
   );
 }
 
-SplashScreen.preventAutoHideAsync();
 
 const styles = StyleSheet.create({
   container: {
