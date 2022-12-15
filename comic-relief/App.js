@@ -19,7 +19,7 @@ SplashScreen.preventAutoHideAsync();
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#7F669D',
     alignItems: 'center',
     justifyContent: 'center',
     fontFamily: 'cursive',
