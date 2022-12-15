@@ -7,7 +7,7 @@ import menuImage from './assets/menu.png';
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <View style={styles.all}>
       <div style={styles.topBar}>
         <img src={menuImage} width="60" height="60" align="left"></img>
         <h1 style={{textAlign: 'center'}}>COMIC RELIEF</h1>
@@ -30,12 +30,12 @@ const styles = StyleSheet.create({
   topBar: {
     position: 'sticky',
     top: 0,
-    backgroundColor: '#7F669D',
+    backgroundColor: '#000000',
     padding: '20px',
   },
 
   navBar: {
-    backgroundColor: '#BA94D1',
+    backgroundColor: '#CF0A0A',
     fontSize: 25,
   },
 
@@ -43,10 +43,10 @@ const styles = StyleSheet.create({
     padding: '20px',
   },
 
-  container: {
+  all: {
     flex: 1,
-    backgroundColor: '#DEBACE',
+    backgroundColor: '#DC5F00',
     fontFamily: 'cursive',
-    color: '#FBFACD',
+    color: '#EEEEEE',
   },
 });
