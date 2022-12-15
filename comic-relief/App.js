@@ -9,7 +9,6 @@ export default function App() {
       <div>
         <h1>COMIC RELIEF</h1>
       </div>
-      <Text>Hello, World!</Text>
       <StatusBar style="auto" />
     </View>
   );
