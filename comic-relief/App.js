@@ -8,7 +8,7 @@ export default function App() {
     <View style={styles.container}>
       <div>
         <h1>COMIC RELIEF</h1>
-        <p>Get some relief by reading comics!</p>
+        <p>Get some Marvel comics to read!</p>
       </div>
       <StatusBar style="auto" />
     </View>
