@@ -10,14 +10,14 @@ export default function App() {
     <View style={styles.all}>
       <div style={styles.topBar}>
         <h1 style={{textAlign: 'center'}}>COMIC RELIEF</h1>
+        <div style={styles.navBar}>
+          <Navbar></Navbar>
+        </div>
       </div>
       
-      <div style={styles.navBar}>
-          <Navbar></Navbar>
-      </div>
       
       <div style={styles.mainPage}>
-        <p>Get some Marvel comics to read!</p>
+        <p style={{padding: "1000px"}}>Get some Marvel comics to read!</p>
       </div>
       <StatusBar style="auto" />
     </View>
@@ -30,12 +30,12 @@ const styles = StyleSheet.create({
     position: 'sticky',
     top: 0,
     backgroundColor: '#000000',
-    padding: '15px',
+    padding: '5px',
   },
 
   navBar: {
     backgroundColor: '#CF0A0A',
-    fontSize: 25,
+    fontSize: 20,
   },
 
   mainPage: {
