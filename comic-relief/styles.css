@@ -10,10 +10,11 @@
     padding: 5px;
     font-family: 'Action Comics';
     color: #EEEEEE;
+    font-size: medium;
 }
 
 .mainPage {
-    padding: 20px;
+    padding: 10px;
     background: #DC5F00
 }
 
