@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Action Comics'; /*a name to be used later*/
+    src: url('../assets/fonts/action_comics.ttf') format('truetype'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Oswald'; /*a name to be used later*/
+    src: url('../assets/fonts/Oswald.ttf') format('truetype'); /*URL to font*/
+}
+
 a {
     display: inline-flexbox;
     color: #fff;
@@ -6,6 +16,8 @@ a {
     padding-right: 15%;
     margin: 0px;
     background: #000;
+    font-family:;
+    text-decoration: none;
   }
   
 a:hover {

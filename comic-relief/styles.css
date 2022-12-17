@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Action Comics'; /*a name to be used later*/
+    src: url('./assets/fonts/action_comics.ttf') format('truetype'); /*URL to font*/
+}
+
+.topBar {
+    position: sticky;
+    top: 0;
+    background: #000000;
+    padding: 5px;
+    font-family: 'Action Comics';
+    color: #EEEEEE;
+}
+
+.mainPage {
+    padding: 20px;
+    background: #DC5F00
+}
+
+.all {
+    flex: 1;
+    background: #DC5F00;
+    font-family: cursive;
+    color: #EEEEEE;
+}

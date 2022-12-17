@@ -2,21 +2,21 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import * as SplashScreen from 'expo-splash-screen';
+
+import styles from './styles.css';
 import Navbar from './components/Navbar.js';
 import menuImage from './assets/menu.png';
 
 export default function App() {
   return (
-    <View style={styles.all}>
-      <div style={styles.topBar}>
+    <View className='all'>
+      <div className='topBar'>
         <h1 style={{textAlign: 'center'}}>COMIC RELIEF</h1>
-        <div style={styles.navBar}>
-          <Navbar></Navbar>
-        </div>
+        <Navbar></Navbar>
       </div>
       
       
-      <div style={styles.mainPage}>
+      <div className='mainPage'>
         <p style={{padding: "1000px"}}>Get some Marvel comics to read!</p>
       </div>
       <StatusBar style="auto" />
@@ -25,27 +25,22 @@ export default function App() {
 }
 
 
-const styles = StyleSheet.create({
-  topBar: {
-    position: 'sticky',
-    top: 0,
-    backgroundColor: '#000000',
-    padding: '5px',
-  },
+// const styles = StyleSheet.create({
+//   topBar: {
+//     position: 'sticky',
+//     top: 0,
+//     backgroundColor: '#000000',
+//     padding: '5px',
+//   },
 
-  navBar: {
-    backgroundColor: '#CF0A0A',
-    fontSize: 20,
-  },
+//   mainPage: {
+//     padding: '20px',
+//   },
 
-  mainPage: {
-    padding: '20px',
-  },
-
-  all: {
-    flex: 1,
-    backgroundColor: '#DC5F00',
-    fontFamily: 'cursive',
-    color: '#EEEEEE',
-  },
-});
+//   all: {
+//     flex: 1,
+//     backgroundColor: '#DC5F00',
+//     fontFamily: 'cursive',
+//     color: '#EEEEEE',
+//   },
+// });
