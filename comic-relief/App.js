@@ -2,14 +2,13 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import * as SplashScreen from 'expo-splash-screen';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar.js';
 import menuImage from './assets/menu.png';
 
 export default function App() {
   return (
     <View style={styles.all}>
       <div style={styles.topBar}>
-        <img src={menuImage} width="60" height="60" align="left"></img>
         <h1 style={{textAlign: 'center'}}>COMIC RELIEF</h1>
       </div>
       
@@ -31,7 +30,7 @@ const styles = StyleSheet.create({
     position: 'sticky',
     top: 0,
     backgroundColor: '#000000',
-    padding: '20px',
+    padding: '15px',
   },
 
   navBar: {

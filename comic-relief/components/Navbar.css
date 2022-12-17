@@ -1,0 +1,18 @@
+a {
+    display: inline-flexbox;
+    color: #fff;
+    padding: 30px;
+    padding-left: 16%;
+    padding-right: 16%;
+    margin: 0px;
+    background: #000;
+  }
+  
+a:hover {
+    background: #CF0A0A;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-evenly;
+}
