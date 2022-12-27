@@ -5,9 +5,6 @@ import React from 'react';
 import styles from './styles.css';
 import Navbar from './components/Navbar.js';
 
-import axios from "axios";
-import { useState } from "react";
-import { useEffect } from "react";
 
 
 const privateKey = '1259e13ddbaf48febf8d92d86f7a0509636b5a34';
@@ -29,7 +26,7 @@ const response = fetch(url)
 comicsData = response;
 console.log(comicsData);
 
-//const comics = `<h1>John Doe</h1>`;
+const comics = `<h1>John Doe</h1>`;
 
 
 export default function App() {
