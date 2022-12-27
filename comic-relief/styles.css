@@ -15,12 +15,18 @@
 
 .mainPage {
     padding: 10px;
-    background: #DC5F00
+    background: #DC5F00;
+    padding-bottom: 75%;
 }
 
 .all {
     flex: 1;
     background: #DC5F00;
     font-family: cursive;
-    color: #EEEEEE;
+    color: #DC5F00;
+    background-color: #DC5F00;
+}
+
+.comic-thumbnail {
+    width: 150px;
 }
