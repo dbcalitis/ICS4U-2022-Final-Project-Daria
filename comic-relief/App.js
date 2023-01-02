@@ -4,6 +4,7 @@ import React from 'react';
 
 import styles from './styles.css';
 import Navbar from './components/Navbar.js';
+import Card from './components/Card.js'
 
 
 
@@ -40,6 +41,7 @@ export default function App() {
       <div className='mainPage'>
         <div id='main'>
           <div dangerouslySetInnerHTML={{ __html: comics }}></div>
+          <div className="content"></div>
         </div>
         <center>
           <p><b>Data provided by Marvel. © 2014 Marvel</b></p>
