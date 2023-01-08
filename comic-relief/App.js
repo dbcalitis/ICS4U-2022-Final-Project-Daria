@@ -1,36 +1,33 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import React from 'react';
+import React, { useEffect } from 'react';
+import axios from 'axios';
+import { useState } from 'react';
+
 
 import styles from './styles.css';
 import Navbar from './components/Navbar.js';
 import Card from './components/Card.js'
 
-
-
 const privateKey = '1259e13ddbaf48febf8d92d86f7a0509636b5a34';
 const key = "9adc0fa329a794fce9cc9d03152b282e";
 const url = `https://gateway.marvel.com:443/v1/public/comics?apikey=${key}`;
 
-let comicsData;
-
-const response = fetch(url)
-  .then((response) => response.json())
-  .then(data => {
-    comicsData = data;
-   })
-  .then(() => {
-    console.log(comicsData);
-    return comicsData;
-   });
-
-comicsData = response;
-console.log(comicsData);
-
-const comics = `<h1>John Doe</h1>`;
-
 
 export default function App() {
+  // gives an array of data about characters
+  const [url,setUrl] = useState('https://gateway.marvel.com/v1/public/characters?ts=1&apikey=9adc0fa329a794fce9cc9d03152b282e&hash=080d38272f9b6f624b0d94a6d5562145')
+  const [item, setItem] = useState();
+
+  // gets the data through the url
+  useEffect(()=>{
+    const fetch = async() => {
+      const res = await axios.get(url);
+      setItem(res.data.data.results);
+    }
+    fetch();
+  }, [url])
+
   return (
     <View className='all'>
       <div className='topBar'>
@@ -40,12 +37,10 @@ export default function App() {
 
       <div className='mainPage'>
         <div id='main'>
-          <div dangerouslySetInnerHTML={{ __html: comics }}></div>
           <div className="content">
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
+            {
+              (!item)? <p>Not Found</p> : <Card data={item}></Card>
+            }
           </div>
         </div>
         <center>

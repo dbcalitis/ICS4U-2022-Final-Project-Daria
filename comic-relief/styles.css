@@ -33,6 +33,14 @@ p {
     font-size: 25px;
 }
 
+h4 {
+    color: white;
+    font-weight: normal;
+    font-size: large;
+    text-align: center;
+    font-family: 'Oswald';
+}
+
 .comic-thumbnail {
     width: 150px;
 }
