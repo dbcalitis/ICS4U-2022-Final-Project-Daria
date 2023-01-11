@@ -4,7 +4,6 @@ import React, { useEffect } from 'react';
 import axios from 'axios';
 import { useState } from 'react';
 
-
 import styles from './styles.css';
 import Navbar from './components/Navbar.js';
 import Card from './components/Card.js'
