@@ -1,4 +1,5 @@
 import React from 'react'
+import hulk from './../assets/hulk.jpg'
 
 export const Card = ({data}) => {
   return (

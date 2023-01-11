@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/static/js/app.9287e2aa.chunk.js",
-    "app.js.map": "/static/js/app.9287e2aa.chunk.js.map",
+    "app.js": "/static/js/app.561ea8b4.chunk.js",
+    "app.js.map": "/static/js/app.561ea8b4.chunk.js.map",
     "runtime~app.js": "/static/js/runtime~app.27401809.js",
     "runtime~app.js.map": "/static/js/runtime~app.27401809.js.map",
-    "static/js/2.d191d182.chunk.js": "/static/js/2.d191d182.chunk.js",
-    "static/js/2.d191d182.chunk.js.map": "/static/js/2.d191d182.chunk.js.map",
+    "static/js/2.18082a75.chunk.js": "/static/js/2.18082a75.chunk.js",
+    "static/js/2.18082a75.chunk.js.map": "/static/js/2.18082a75.chunk.js.map",
     "fonts/Oswald.ttf": "/./fonts/Oswald.ttf",
     "favicon-16.png": "/favicon-16.png",
     "favicon-32.png": "/favicon-32.png",
@@ -13,11 +13,12 @@
     "index.html": "/index.html",
     "manifest.json": "/manifest.json",
     "serve.json": "/serve.json",
-    "static/js/2.d191d182.chunk.js.LICENSE.txt": "/static/js/2.d191d182.chunk.js.LICENSE.txt"
+    "static/js/2.18082a75.chunk.js.LICENSE.txt": "/static/js/2.18082a75.chunk.js.LICENSE.txt",
+    "static/media/hulk.jpg": "/static/media/hulk.286828fb.jpg"
   },
   "entrypoints": [
     "static/js/runtime~app.27401809.js",
-    "static/js/2.d191d182.chunk.js",
-    "static/js/app.9287e2aa.chunk.js"
+    "static/js/2.18082a75.chunk.js",
+    "static/js/app.561ea8b4.chunk.js"
   ]
 }

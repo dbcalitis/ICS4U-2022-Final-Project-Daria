@@ -27,5 +27,5 @@ a:hover {
 .navBar {
     display: flex;
     justify-content: space-evenly;
-    
+    position: sticky;
 }
