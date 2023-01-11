@@ -6,7 +6,8 @@ import { useState } from 'react';
 
 import styles from './styles.css';
 import Navbar from './components/Navbar.js';
-import Card from './components/Card.js'
+import Main from './components/Main.js';
+import Card from './components/Card.js';
 
 const privateKey = '1259e13ddbaf48febf8d92d86f7a0509636b5a34';
 const key = "9adc0fa329a794fce9cc9d03152b282e";
@@ -36,6 +37,10 @@ export default function App() {
 
       <div className='mainPage'>
         <div id='main'>
+          <h1>Characters</h1>
+          <label className="searchBar">
+            <Main element="Character"></Main>
+          </label>
           <div className="content">
             {
               (!item)? <p>Not Found</p> : <Card data={item}></Card>
