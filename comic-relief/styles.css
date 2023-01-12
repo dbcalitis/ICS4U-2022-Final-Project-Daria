@@ -52,6 +52,27 @@ h4 {
     font-family: 'Oswald';
 }
 
+input {
+    font-size: 30px;
+    font-family: "Oswald";
+    text-align: center;
+}
+
+button {
+    color: white;
+    background: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 15px;
+    font-family: "Oswald";
+}
+
+button:hover {
+    background: #CF0A0A;
+}
+
 .comic-thumbnail {
     width: 150px;
 }
