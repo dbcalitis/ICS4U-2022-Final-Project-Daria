@@ -25,7 +25,6 @@ export function Comics() {
   const [url,setUrl] = useState('https://gateway.marvel.com/v1/public/comics?ts=1&apikey=9adc0fa329a794fce9cc9d03152b282e&hash=080d38272f9b6f624b0d94a6d5562145')
   const [item, setItem] = useState();
   const [search, setSearch] = useState("");
-  const [category, setCategory] = useState("home");
 
   // gets the data through the url.
   useEffect(()=>{
@@ -66,7 +65,6 @@ export function Characters() {
   const [url,setUrl] = useState('https://gateway.marvel.com/v1/public/characters?ts=1&apikey=9adc0fa329a794fce9cc9d03152b282e&hash=080d38272f9b6f624b0d94a6d5562145')
   const [item, setItem] = useState();
   const [search, setSearch] = useState("");
-  const [category, setCategory] = useState("home");
 
   // gets the data through the url.
   useEffect(()=>{
