@@ -26,7 +26,7 @@ h2 {
     font-size: 50px;
     padding-left: 2%;
 }
-a {
+a:not(.link) {
     display: inline-flexbox;
     color: #fff;
     padding: 10px;
@@ -42,10 +42,51 @@ a:hover {
     background: #CF0A0A;
 }
 
+.block {
+    display: inline-block;
+    overflow: cover;
+}
+
+.image {
+    float: left;
+    display: block;
+    padding-left: 50px;
+    width: 30%;
+}
+
+.textBox {
+    float: right;
+    display: block;
+    width: 60%;
+    height: 10%;
+    border: 3px solid red;
+    margin: 40px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    color: white;
+    background-color: black;
+}
+
+.textBox .paragraph, .textBox a {
+    color: white;
+}
+
+.textBox .paragraph {
+    padding: 10px;
+}
+
+.me {
+    border-radius: 30%;
+    width: 32%;
+    height: 30%;
+    margin-top: 7%;
+}
+
 .page {
     transition: 0.5s;
     animation: fadeInAnimation 2s;
     grid-template-columns: repeat(6, minmax(200px, 1fr));
+    display: block
 }
 
 .navBar {

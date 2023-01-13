@@ -6,12 +6,18 @@ import Card from './Card.js';
 import avengers from './Avengers.js';
 import style from './Navbar.css';
 
+import schoolLogo from './../assets/SMTHS_logo.jpg';
+import me from './../assets/me.jpg';
+
+
+
 export function Home() {
   return(
     <View className='page'>
       <div className='page'>
         <h1 className='centered'>Home</h1>
         <div className='homeImage' />
+        <p>Access the Marvel Database to view all comics and characters that they have created!</p> 
         <h2>The Original Avengers (MCU)</h2>
 
         <div className="content" id="content">
@@ -28,10 +34,36 @@ export function About() {
     <View>
       <div className='page'>
         <h1>About</h1>
+        <div className='block'>
+          <img className='image' src={schoolLogo}/>
+          <div className='textBox'> 
+            <p className='paragraph'>Comic Relief is a final ICS4U school project made by Daria Calitis. The website is made with 
+              the <a className='link' href='https://developer.marvel.com/'> Marvel API </a>
+              and <a className='link' href='https://expo.dev/'>Expo</a> through Github Codespaces.</p>
+          </div>
+        </div>
+
+        <h2>More about the Creator</h2>
+        <div className='block'>
+          <img className='me' src={me}/>
+          <div className='textBox'>
+            <p className='paragraph'>
+              Hi, my name is Daria Calitis. I was a Grade 12 student when I made this website. Through this project, I
+              learned more about React Native and how to create web applications. While I was thinking for ideas, I wanted to
+              play around with APIs and see how to work with them when creating an application.
+              <br/>
+              <br/>
+              <a href='https://github.com/dbcalitis'>Github</a>
+              <a href='https://www.linkedin.com/in/daria-calitis-125a8a242/'>LinkedIn</a>
+            </p>
+          </div>
+        </div>
       </div>
     </View>
   )
 }
+
+// The Comics' page
 
 export function Comics() {
   // gives an array of data about characters
@@ -74,6 +106,8 @@ export function Comics() {
     </View>
   )
 }
+
+// The Characters' page
 
 export function Characters() {
   // gives an array of data about characters

@@ -33,7 +33,7 @@ export default function App() {
           {(category == 'characters')? <Characters/>: null}
         </div>
         <center>
-          <p><b>Data provided by Marvel. © 2014 Marvel</b></p>
+          <p><b>Data provided by Marvel. © 2023 Marvel</b></p>
         </center>
       </div>
       <StatusBar style="auto" />
