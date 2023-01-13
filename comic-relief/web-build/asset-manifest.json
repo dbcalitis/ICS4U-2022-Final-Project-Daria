@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/static/js/app.f40db001.chunk.js",
-    "app.js.map": "/static/js/app.f40db001.chunk.js.map",
+    "app.js": "/static/js/app.489f4d88.chunk.js",
+    "app.js.map": "/static/js/app.489f4d88.chunk.js.map",
     "runtime~app.js": "/static/js/runtime~app.27401809.js",
     "runtime~app.js.map": "/static/js/runtime~app.27401809.js.map",
-    "static/js/2.7bf24b6a.chunk.js": "/static/js/2.7bf24b6a.chunk.js",
-    "static/js/2.7bf24b6a.chunk.js.map": "/static/js/2.7bf24b6a.chunk.js.map",
+    "static/js/2.8e178f2d.chunk.js": "/static/js/2.8e178f2d.chunk.js",
+    "static/js/2.8e178f2d.chunk.js.map": "/static/js/2.8e178f2d.chunk.js.map",
     "fonts/Oswald.ttf": "/./fonts/Oswald.ttf",
     "favicon-16.png": "/favicon-16.png",
     "favicon-32.png": "/favicon-32.png",
@@ -13,12 +13,12 @@
     "index.html": "/index.html",
     "manifest.json": "/manifest.json",
     "serve.json": "/serve.json",
-    "static/js/2.7bf24b6a.chunk.js.LICENSE.txt": "/static/js/2.7bf24b6a.chunk.js.LICENSE.txt",
-    "static/media/hulk.jpg": "/static/media/hulk.286828fb.jpg"
+    "static/js/2.8e178f2d.chunk.js.LICENSE.txt": "/static/js/2.8e178f2d.chunk.js.LICENSE.txt",
+    "static/media/homeImage.jpg": "/static/media/homeImage.7ae36afc.jpg"
   },
   "entrypoints": [
     "static/js/runtime~app.27401809.js",
-    "static/js/2.7bf24b6a.chunk.js",
-    "static/js/app.f40db001.chunk.js"
+    "static/js/2.8e178f2d.chunk.js",
+    "static/js/app.489f4d88.chunk.js"
   ]
 }
