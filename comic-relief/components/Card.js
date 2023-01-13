@@ -11,7 +11,7 @@ export const Card = ({data}) => {
               <div className="card">
                 <img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt=""></img>
                   <div className="title">
-                    <h4>{item.name}</h4>
+                    <h4>{(!item.name)? item.title : item.name}</h4>
                   </div>
               </div>
             )
