@@ -3,6 +3,25 @@
     src: url('./assets/fonts/action_comics.ttf') format('truetype'); /*URL to font*/
 }
 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-150px)
+    }
+    100% {
+        transform: translateY(0px)
+    }
+    
+}
+
 .topBar {
     position: static;
     top: 0;
@@ -11,6 +30,7 @@
     font-family: 'Action Comics';
     color: #EEEEEE;
     font-size: medium;
+    animation: slideDown 2s;
 }
 
 .mainPage {
@@ -44,6 +64,10 @@ h1 {
     font-size: 50px;
 }
 
+h3 {
+    font-family: 'Action Comics'
+}
+
 h4 {
     color: black;
     font-weight: normal;
@@ -56,6 +80,8 @@ input {
     font-size: 30px;
     font-family: "Oswald";
     text-align: center;
+    background-color: black;
+    color: white;
 }
 
 button {
@@ -71,69 +97,14 @@ button {
 
 button:hover {
     background: #CF0A0A;
-}
-
-.comic-thumbnail {
-    width: 150px;
+    cursor: pointer;
 }
 
 .content {
     width: 80%;
     margin: 3rem auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(5, minmax(200px, 1fr));
     grid-gap: 1rem;
 }
 
-.card {
-    background-color: #B41F23;
-    color: white;
-    position: relative;
-    margin-top: 3rem;
-    padding: 1.5px;
-}
-
-.card img {
-    width: 100%;
-    height: 75%;
-    transition: 0.5s;
-}
-
-.card:hover img {
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.card h4 {
-    color: white;
-}
-
-.card .title {
-    text-align: center;
-    padding: 1rem;
-    font-size: 17px;
-}
-
-.card::after,
-.card::before {
-    content: '';
-    position: absolute;
-    background: #B41F23;
-    z-index: -1;
-}
-
-.card::before {
-    bottom: -2em;
-    left: 0;
-    width: 75%;
-    height: 3em;
-}
-
-.card::after {
-    bottom: -2em;
-    right: 0.9em;
-    width: 41%;
-    height: 5em;
-    transform: rotate(-38deg);
-    box-sizing: 1rem;
-}

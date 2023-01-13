@@ -3,11 +3,22 @@ import { useState } from 'react';
 import { View } from 'react-native';
 import axios from 'axios';
 import Card from './Card.js';
+import avengers from './Avengers.js';
+import style from './Navbar.css';
 
 export function Home() {
   return(
-    <View>
-      <h1>Home</h1>
+    <View className='page'>
+      <div className='page'>
+        <h1 className='centered'>Home</h1>
+        <div className='homeImage' />
+        <h2>The Original Avengers (MCU)</h2>
+
+        <div className="content" id="content">
+          <Card className='avengers' data={avengers}/>
+        </div>
+
+      </div>
     </View>
   )
 }
@@ -15,7 +26,9 @@ export function Home() {
 export function About() {
   return(
     <View>
-      <h1>About</h1>
+      <div className='page'>
+        <h1>About</h1>
+      </div>
     </View>
   )
 }
@@ -40,21 +53,23 @@ export function Comics() {
   }
   return(
     <View>
-      <h1>Comics</h1>
-      <div className="searchBar">
-        <center>
-          <input placeholder={`Enter name here`} size="40" 
-            onChange={e=>setSearch(e.target.value)}/>
-        </center>
-        <br></br>
-        <center>
-          <button onClick={searchMarvel}>Search</button>
-        </center> 
-      </div>
-      <div className="content" id="content">
-        {
-          (!item)? <p>Not Found</p> : <Card data={item}></Card>
-        }
+      <div className='page'>
+        <h1>Comics</h1>
+        <div className="searchBar">
+          <center>
+            <input placeholder={`Enter name here`} size="40" 
+              onChange={e=>setSearch(e.target.value)}/>
+          </center>
+          <br></br>
+          <center>
+            <button onClick={searchMarvel}>Search</button>
+          </center> 
+        </div>
+        <div className="content" id="content">
+          {
+            (!item)? <p>Not Found</p> : <Card data={item}></Card>
+          }
+        </div>
       </div>
     </View>
   )
@@ -80,21 +95,23 @@ export function Characters() {
   }
   return(
     <View>
-      <h1>Characters</h1>
-      <div className="searchBar">
-        <center>
-          <input placeholder={`Enter name here`} size="40" 
-            onChange={e=>setSearch(e.target.value)}/>
-        </center>
-        <br></br>
-        <center>
-          <button onClick={searchMarvel}>Search</button>
-        </center> 
-      </div>
-      <div className="content" id="content">
-        {
-          (!item)? <p>Not Found</p> : <Card data={item}></Card>
-        }
+      <div className='page'>
+        <h1>Characters</h1>
+        <div className="searchBar">
+          <center>
+            <input placeholder={`Enter name here`} size="40" 
+              onChange={e=>setSearch(e.target.value)}/>
+          </center>
+          <br></br>
+          <center>
+            <button onClick={searchMarvel}>Search</button>
+          </center> 
+        </div>
+        <div className="content" id="content">
+          {
+            (!item)? <p>Not Found</p> : <Card data={item}></Card>
+          }
+        </div>
       </div>
     </View>
   )

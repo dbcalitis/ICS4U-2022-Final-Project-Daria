@@ -8,6 +8,24 @@
     src: url('../assets/fonts/Oswald.ttf') format('truetype'); /*URL to font*/
 }
 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+* {
+    font-family: 'Oswald';
+    transition: 0.5s;
+}
+
+h2 {
+    font-size: 50px;
+    padding-left: 2%;
+}
 a {
     display: inline-flexbox;
     color: #fff;
@@ -24,8 +42,38 @@ a:hover {
     background: #CF0A0A;
 }
 
+.page {
+    transition: 0.5s;
+    animation: fadeInAnimation 2s;
+    grid-template-columns: repeat(6, minmax(200px, 1fr));
+}
+
 .navBar {
     display: flex;
     justify-content: space-evenly;
     position: sticky;
+}
+
+.homeImage {
+    border: 5px solid red;
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    background:
+    /* top, transparent black, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+    /* bottom, image */
+    url(./../assets/homeImage.jpg);
+}
+
+.centered {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
 }
