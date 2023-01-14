@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/static/js/app.489f4d88.chunk.js",
-    "app.js.map": "/static/js/app.489f4d88.chunk.js.map",
+    "app.js": "/static/js/app.83537949.chunk.js",
+    "app.js.map": "/static/js/app.83537949.chunk.js.map",
     "runtime~app.js": "/static/js/runtime~app.27401809.js",
     "runtime~app.js.map": "/static/js/runtime~app.27401809.js.map",
-    "static/js/2.8e178f2d.chunk.js": "/static/js/2.8e178f2d.chunk.js",
-    "static/js/2.8e178f2d.chunk.js.map": "/static/js/2.8e178f2d.chunk.js.map",
+    "static/js/2.1ac81ce1.chunk.js": "/static/js/2.1ac81ce1.chunk.js",
+    "static/js/2.1ac81ce1.chunk.js.map": "/static/js/2.1ac81ce1.chunk.js.map",
     "fonts/Oswald.ttf": "/./fonts/Oswald.ttf",
     "favicon-16.png": "/favicon-16.png",
     "favicon-32.png": "/favicon-32.png",
@@ -13,12 +13,14 @@
     "index.html": "/index.html",
     "manifest.json": "/manifest.json",
     "serve.json": "/serve.json",
-    "static/js/2.8e178f2d.chunk.js.LICENSE.txt": "/static/js/2.8e178f2d.chunk.js.LICENSE.txt",
-    "static/media/homeImage.jpg": "/static/media/homeImage.7ae36afc.jpg"
+    "static/js/2.1ac81ce1.chunk.js.LICENSE.txt": "/static/js/2.1ac81ce1.chunk.js.LICENSE.txt",
+    "static/media/SMTHS_logo.jpg": "/static/media/SMTHS_logo.4e7a8b16.jpg",
+    "static/media/homeImage.jpg": "/static/media/homeImage.7ae36afc.jpg",
+    "static/media/me.jpg": "/static/media/me.b4f10e1f.jpg"
   },
   "entrypoints": [
     "static/js/runtime~app.27401809.js",
-    "static/js/2.8e178f2d.chunk.js",
-    "static/js/app.489f4d88.chunk.js"
+    "static/js/2.1ac81ce1.chunk.js",
+    "static/js/app.83537949.chunk.js"
   ]
 }
